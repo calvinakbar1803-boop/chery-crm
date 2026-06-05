@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chery CRM Login</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#2f3a4d;
+}
+
+.container{
+    width:380px;
+    height:730px;
+    background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800') center/cover;
+    position:relative;
+    overflow:hidden;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.8);
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    padding:40px 30px;
+    text-align:center;
+}
+
+.logo img{
+    width:120px;
+}
+
+.logo h1{
+    color:#d50000;
+    margin-top:10px;
+}
+
+.login-card{
+    margin-top:50px;
+}
+
+.login-icon{
+    width:70px;
+    height:70px;
+    margin:auto;
+    background:#fff;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    color:red;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.title{
+    margin-top:20px;
+    font-size:40px;
+    color:#324b7b;
+    font-weight:bold;
+}
+
+.input-group{
+    margin-top:25px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    border:none;
+    border-radius:5px;
+}
+
+.captcha{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.captcha-code{
+    width:120px;
+    height:50px;
+    background:#fff;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+.qr{
+    width:90px;
+    height:90px;
+    background:#fff;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#235ea7;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+.forgot{
+    display:block;
+    margin-top:10px;
+    color:#235ea7;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.cars{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.cars img{
+    width:100%;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="overlay"></div>
+
+    <div class="content">
+
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Chery_logo.svg">
+            <h1>CHERY</h1>
+        </div>
+
+        <div class="login-card">
+
+            <div class="login-icon">➜</div>
+
+            <div class="title">CRM</div>
+
+            <form action="dashboard.html" method="get">
+
+                <div class="input-group">
+
+                    <input type="text" name="mobile" placeholder="Mobile Number" required>
+
+                    <input type="password" name="password" placeholder="Password" required>
+
+                    <div class="captcha">
+                        <div>
+                            <div class="captcha-code">WGXX32</div>
+                            <input type="text" placeholder="Input Captcha" required>
+                        </div>
+
+                        <div class="qr">
+                            QR
+                        </div>
+                    </div>
+
+                    <button type="submit">LOGIN</button>
+
+                    <a href="#" class="forgot">
+                        Forget Password
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="cars">
+        <img src="https://images.openai.com/static-rsc-4/w1S0vZ0QrHN3S0_Iw9Cs3y_MCNcaOUHoB81EmsluW81Z1lZP4b531HA0Uqm0OsyT8qgWdBT_MiMmm0d83JMeCNaCiPZXRfc0Q8EIh95ZHfUBx1Ab2OapC4MvNziZgQ0aFn_klYD331WQfxkRWUdk3smdQd5yW5nIu3mbB88CY5sts1jIJpZaBUwZrAT13bcP?purpose=fullsize">
+    </div>
+
+</div>
+
+</body>
+</html>

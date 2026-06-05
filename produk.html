@@ -1,0 +1,271 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Unit Chery</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800') center/cover;
+}
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(255,255,255,.85);
+    z-index:0;
+}
+
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    width:250px;
+    height:100vh;
+    background:#324b7b;
+    z-index:2;
+}
+
+.sidebar h2{
+    color:white;
+    text-align:center;
+    padding:25px;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#235ea7;
+}
+
+.main{
+    position:relative;
+    z-index:1;
+    margin-left:250px;
+    padding:30px;
+}
+
+.page-title{
+    color:#324b7b;
+    margin-bottom:20px;
+}
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    width:220px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#324b7b;
+    margin-bottom:10px;
+}
+
+.card h1{
+    color:#d50000;
+}
+
+.form-box,
+.table-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    margin-bottom:25px;
+}
+
+.form-box h3,
+.table-box h3{
+    color:#324b7b;
+    margin-bottom:15px;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+button{
+    background:#235ea7;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#324b7b;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f5f5f5;
+}
+</style>
+
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="sidebar">
+
+<h2>CRM CHERY</h2>
+
+<a href="dashboard.html">🏠 Dashboard</a>
+<a href="customer.html">👥 Customer</a>
+<a href="produk.html">🚗 Unit Chery</a>
+<a href="prospect.html">📞 Prospect</a>
+<a href="followup.html">📝 Follow Up</a>
+<a href="testdrive.html">🚙 Test Drive</a>
+<a href="spk.html">📄 SPK</a>
+<a href="delivery.html">🎁 Delivery</a>
+<a href="laporan.html">📊 Laporan</a>
+<a href="login.html">🚪 Logout</a>
+
+</div>
+
+<div class="main">
+
+<h1 class="page-title">Data Unit Chery</h1>
+
+<div class="card-container">
+
+<div class="card">
+<h3>Total Unit</h3>
+<h1>24</h1>
+</div>
+
+<div class="card">
+<h3>Stok Tersedia</h3>
+<h1>18</h1>
+</div>
+
+<div class="card">
+<h3>Unit Terjual</h3>
+<h1>6</h1>
+</div>
+
+</div>
+
+<div class="form-box">
+
+<h3>Tambah Unit</h3>
+
+<form>
+
+<input type="text" placeholder="Kode Unit">
+
+<input type="text" placeholder="Nama Unit">
+
+<input type="number" placeholder="Harga OTR">
+
+<input type="number" placeholder="Jumlah Stok">
+
+<button type="submit">Simpan Unit</button>
+
+</form>
+
+</div>
+
+<div class="table-box">
+
+<h3>Daftar Unit Chery</h3>
+
+<table>
+
+<tr>
+<th>Kode</th>
+<th>Unit</th>
+<th>Harga OTR</th>
+<th>Stok</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>OM5</td>
+<td>Omoda 5</td>
+<td>Rp 350.000.000</td>
+<td>10</td>
+<td>Tersedia</td>
+</tr>
+
+<tr>
+<td>E5</td>
+<td>Omoda E5</td>
+<td>Rp 420.000.000</td>
+<td>5</td>
+<td>Tersedia</td>
+</tr>
+
+<tr>
+<td>T8P</td>
+<td>Tiggo 8 Pro</td>
+<td>Rp 550.000.000</td>
+<td>7</td>
+<td>Tersedia</td>
+</tr>
+
+<tr>
+<td>J6</td>
+<td>J6 EV</td>
+<td>Rp 505.000.000</td>
+<td>2</td>
+<td>Tersedia</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
+```
